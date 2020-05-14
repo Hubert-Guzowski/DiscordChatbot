@@ -1,0 +1,37 @@
+responses:
+  hello:
+    hello: "Hello, I'm robocik - this server's chatbot. Type !info to see, how to communicate with me."
+  help:
+    hello: "Type !hello to greet with me"
+    emotion: "Type !emotion and anything You would like in \"\". I'll contact my friends at IBM to tell You, how You feel :D"
+    talk: "Type !talk to talk with me - not yet implemented"
+    games: "Type !games and get to know, what other people here are playing"
+    game: "Type !game and a game title in \"\". I will remember it for when someone types !games command"
+    descriptions: "Type !descriptions to see, who are the members of this server"
+    description: "Type !description and a short text in \"\". I will remember it for when someone types !descriptions command"
+    joke: "Type !joke and I will tell You a joke, that I've heard"
+    addjoke: "Type !addJoke ant something funny in \"\" and I will remember it for when someone types !joke command"
+    clear: "Type !clear and I will forget Your previous answers"
+    date: "Type !date and I will tell You, what time it is"
+  emotion:
+    intense: "Wow! Such {}"
+    normal: "You sound like You feel {}"
+    mild: "You seem a little {}"
+  talk:
+    question: "What is Your favourite {}?"
+    wait: "You need to wait a moment. I'm listening to {} now"
+    answer_first: "I've never heard of {} before. Thanks for teaching me something new :)"
+    answer_existing: "Nice! It's also {} favourite {}"
+    answer_chatbot: "That's also my favourite {} ^^"
+  games:
+    game: "{} plays {}\n"
+    noted: "That's nice"
+  descriptions:
+    description: "{}: {}\n"
+    noted: "Now we know You better :D"
+  jokes:
+    noted: "If I could laugh, I surely would :D"
+  clear:
+    clear: "Hmmm, something to hide?"
+  date:
+    now: "It's {}"
