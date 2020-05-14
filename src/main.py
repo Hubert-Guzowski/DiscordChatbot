@@ -28,6 +28,8 @@ async def info(ctx):
 async def emotion(ctx, text):
     result = analyze_tone(text)
     if result:
+        if len(results_to_list(result)) == 0:
+            await ctx.send(Emotion.indecisive)
         for result in results_to_list(result):
             if result[1] >= 0.8:
                 answer = Emotion.intense.format(result[0])
@@ -39,7 +41,7 @@ async def emotion(ctx, text):
                 answer = Emotion.mild.format(result[0])
                 await ctx.send(answer)
     else:
-        await ctx.send("Sorry, my bot friends at IBM can't tell, how You feel :(")
+        await ctx.send(Emotion.error)
 
 
 @bot.command(name='games')
@@ -99,8 +101,6 @@ async def add_joke(ctx, text):
     with open(jokes_path, 'a+') as f:
         f.write(", " + text)
     await ctx.send(Jokes.noted)
-
-
 
 
 @bot.command(name='clear')

@@ -55,6 +55,8 @@ class Emotion(metaclass=_YAMLStringsGetter):
     intense: str
     normal: str
     mild: str
+    indecisive: str
+    error: str
 
 
 class Talk(metaclass=_YAMLStringsGetter):

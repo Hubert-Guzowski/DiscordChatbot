@@ -17,6 +17,8 @@ responses:
     intense: "Wow! Such {}"
     normal: "You sound like You feel {}"
     mild: "You seem a little {}"
+    indecisive: "That's a hard one! Try a longer message or something clearer"
+    error: "Sorry, my bot friends at IBM can't tell, how You feel :("
   talk:
     question: "What is Your favourite {}?"
     wait: "You need to wait a moment. I'm listening to {} now"
